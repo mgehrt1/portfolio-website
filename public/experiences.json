@@ -1,0 +1,14 @@
+{
+    "data": [
+        {
+            "title": "Software Engineering Associate",
+            "startMonth": "May",
+            "endMonth": "August",
+            "year": 2023,
+            "location": "Heartland Business Systems",
+            "locationLink": "https://www.hbs.net/",
+            "locationColor": "#48A7FF",
+            "description": "Worked with large clients like SSM Health and improved various aspects of their websites. Learned and used the Microsoft .NET stack for development."
+        }
+    ]
+}

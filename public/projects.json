@@ -1,0 +1,34 @@
+{
+    "data": [
+        {
+            "title": "Portfolio Website",
+            "season": "Summer",
+            "year": 2023,
+            "location": "Heartland Business Systems",
+            "locationColor": "#48A7FF",
+            "link": "https://github.com/mgehrt1",
+            "description": "Created a personal website to showcase my portfolio and be hosted online. Learned and used the Astro framework along the way.",
+            "techStack": ["Astro", "React", "TypeScript", "HTML", "CSS"]
+        },
+        {
+            "title": "Airline Optimization",
+            "season": "Spring",
+            "year": 2023,
+            "location": "University of Wisconsin - Madison",
+            "locationColor": "#FF4588",
+            "link": "https://github.com/mgehrt1",
+            "description": "Worked on a team of 6 to create a class project that utilizes Dijkstra's shortest path algorithm. Through a CLI, the user can load a graph of cities and carry out various functions related to airplane travel between them.",
+            "techStack": ["Java", "Git"]
+        },
+        {
+            "title": "Employee Database",
+            "season": "Spring",
+            "year": 2023,
+            "location": "University of Wisconsin - Madison",
+            "locationColor": "#FF4588",
+            "link": "https://github.com/mgehrt1",
+            "description": "Worked on a team of 6 to create a class project that utilizes a Red-Black tree. Through a CLI, the user can load a CSV file of employees and carry out various functions related to analyzing the company’s employees.",
+            "techStack": ["Java", "Git"]
+        }
+    ]
+}

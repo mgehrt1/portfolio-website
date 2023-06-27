@@ -1,0 +1,22 @@
+---
+import experiences from '../../public/experiences.json';
+---
+<section id="experience" class="flex flex-col items-center">
+    <h2 class="mt-5 text-teal text-2xl">Experience</h2>
+    <ul>
+        {experiences.data.map((experience) => {
+                return (
+                    <li class="p-3 mt-5 rounded-2xl hover:bg-hover-blue">
+                        <a href={experience.locationLink} target="_blank">
+                            <div class="flex justify-between">
+                                <h3 class="text-white">{experience.title}</h3>
+                                <p class="text-white opacity-80">{experience.startMonth} - {experience.endMonth} {experience.year}</p>
+                            </div>
+                            <h4 class={`opacity-80 text-${experience.locationColor}`}>{experience.location}</h4>
+                            <p class="text-white opacity-80">{experience.description}</p>
+                        </a>
+                    </li>
+                )
+            })}
+    </ul>
+<section>

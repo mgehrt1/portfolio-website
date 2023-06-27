@@ -1,0 +1,25 @@
+---
+import projects from '../../public/projects.json';
+---
+<section id="projects" class="flex flex-col items-center">
+    <h2 class="mt-5 text-teal text-2xl">Projects</h2>
+    <ul>
+        {projects.data.map(project => {
+                return (
+                    <li class="p-3 mt-5 rounded-2xl hover:bg-hover-blue">
+                        <a href={project.link} target="_blank">
+                            <div class="flex justify-between">
+                                <h3 class="text-white">{project.title}</h3>
+                                <p class="text-white opacity-80">{project.season} {project.year}</p>
+                            </div>
+                            <h4 class={`opacity-80 text-${project.locationColor}`}>{project.location}</h4>
+                            <p class="text-white opacity-80">{project.description}</p>
+                            <div class="flex flex-wrap">
+                                {project.techStack.map(techElement => <div class="bg-techElement rounded-full text-teal px-3 py-1 mr-2">{techElement}</div>)}
+                            </div>    
+                        </a>
+                    </li>
+                )
+            })}
+    </ul>
+</section>

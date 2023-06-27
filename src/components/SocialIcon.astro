@@ -1,0 +1,16 @@
+---
+export interface Props {
+    icon: string;
+    link: string;
+}
+
+const { icon, link} = Astro.props;
+---
+
+<li class="mr-4">
+    <a href={link} target="_blank">
+        <svg class="opacity-50  fill-white" xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24">
+            <path d={icon}/>
+        </svg>
+    </a>
+</li>

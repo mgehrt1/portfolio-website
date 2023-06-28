@@ -7,7 +7,7 @@ const { title } = Astro.props;
 ---
 
 <!DOCTYPE html>
-<html lang="en">
+<html class="scroll-smooth bg-background" lang="en">
 	<head>
 		<meta charset="UTF-8" />
 		<meta name="description" content="Astro description" />
@@ -23,7 +23,6 @@ const { title } = Astro.props;
 		<slot />
 	</body>
 </html>
-
 <style is:global>
 	* {
 		box-sizing: border-box;

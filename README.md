@@ -6,6 +6,6 @@ This is a portfolio website built to demonstrate my technical and web design ski
 
 * Astro
 * React
+* Tailwind
 * Typescript
 * HTML5
-* CSS3

@@ -6,7 +6,7 @@
             "year": 2023,
             "location": "Heartland Business Systems",
             "locationColor": "blue",
-            "link": "https://github.com/mgehrt1",
+            "link": "https://github.com/mgehrt1/portfolio-website",
             "description": "Created a personal website to showcase my portfolio and be hosted online. Learned and used the Astro framework along the way.",
             "techStack": ["Astro", "React", "Tailwind", "TypeScript", "HTML"]
         },

@@ -9,6 +9,16 @@
             "locationLink": "https://www.hbs.net/",
             "locationColor": "blue",
             "description": "Worked with large clients like SSM Health and improved various aspects of their websites. Learned and used the Microsoft .NET stack for development."
+        },
+        {
+            "title": "Cashier/Bagger",
+            "startMonth": "July 2019",
+            "endMonth": "August",
+            "year": 2022,
+            "location": "Woodman's Markets",
+            "locationLink": "https://www.woodmans-food.com/",
+            "locationColor": "green",
+            "description": "Learned great communication and customer service skills. Quickly exceeded standards and recieved several documented customer compliments for excelent service."
         }
     ]
 }

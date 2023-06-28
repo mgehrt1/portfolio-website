@@ -1,19 +1,40 @@
 import NavTab from './NavTab.tsx';
-import { useState } from "react"
+import { useState, useEffect } from "react"
 
 export default function Nav() {
-    const [isClickedAbout, setIsClickedAbout] = useState(true);
-    const [isClickedExperience, setIsClickedExperience] = useState(false);
-    const [isClickedProjects, setIsClickedProjects] = useState(false);
-    const [isClickedContact, setIsClickedContact] = useState(false);
+    const [activeNavTab, setActiveNavTab] = useState("");
 
-    return(
+    useEffect(() => {
+        const handleScroll = () => {
+          const sections = document.querySelectorAll("section[id]");
+    
+          let currentSectionId = "";
+    
+          sections.forEach((section) => {
+            const rect = section.getBoundingClientRect();
+    
+            if (rect.top <= window.innerHeight / 4 && rect.bottom >= window.innerHeight / 4) {
+              currentSectionId = section.getAttribute("id") || "";
+            }
+          });
+    
+          setActiveNavTab(currentSectionId + "-nav");
+        };
+    
+        window.addEventListener("scroll", handleScroll);
+    
+        return () => {
+          window.removeEventListener("scroll", handleScroll);
+        };
+      }, []);
+
+    return (
         <nav className="mt-20">
-            <ul>
-                <NavTab text="About" link="" isClicked={isClickedAbout} setIsClicked={setIsClickedAbout} setIsClickedOther1={setIsClickedExperience} setIsClickedOther2={setIsClickedProjects} setIsClickedOther3={setIsClickedContact} />
-                <NavTab text="Experience" link="experience" isClicked={isClickedExperience} setIsClicked={setIsClickedExperience} setIsClickedOther1={setIsClickedAbout} setIsClickedOther2={setIsClickedProjects} setIsClickedOther3={setIsClickedContact} />
-                <NavTab text="Projects" link="projects" isClicked={isClickedProjects} setIsClicked={setIsClickedProjects} setIsClickedOther1={setIsClickedAbout} setIsClickedOther2={setIsClickedExperience} setIsClickedOther3={setIsClickedContact} />
-                <NavTab text="Contact" link="contact" isClicked={isClickedContact} setIsClicked={setIsClickedContact} setIsClickedOther1={setIsClickedAbout} setIsClickedOther2={setIsClickedExperience} setIsClickedOther3={setIsClickedProjects} />
+            <ul className="w-max">
+                <NavTab text="About" link="about" id="about-nav" activeNavTab={activeNavTab} />
+                <NavTab text="Experience" link="experience" id="experience-nav" activeNavTab={activeNavTab} />
+                <NavTab text="Projects" link="projects" id="projects-nav" activeNavTab={activeNavTab} />
+                <NavTab text="Contact" link="contact" id="contact-nav" activeNavTab={activeNavTab} />
             </ul>
         </nav>
     );

@@ -10,7 +10,7 @@ module.exports = {
 				'blue': '#48A7FF',
 				'yellow': '#E8DD7E',
 				'teal': '#00FBDD',
-				'hover-blue': '#212C3F',
+				'light-blue': '#212C3F',
 				'techElement': 'rgba(43, 72, 82, 0.5)',
 			}
 		},

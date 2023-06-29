@@ -6,14 +6,18 @@ import experiences from '../../public/experiences.json';
     <ul>
         {experiences.data.map((experience) => {
                 return (
-                    <li class="p-3 mt-5 rounded-2xl hover:bg-light-blue">
+                    <li class="p-3 mt-5 rounded-2xl hover:bg-light-blue group">
                         <a href={experience.locationLink} target="_blank">
-                            <div class="flex justify-between">
-                                <h3 class="text-white">{experience.title}</h3>
-                                <p class="text-white opacity-80">{experience.startMonth} - {experience.endMonth} {experience.year}</p>
+                            <div class="flex">
+                                <div class="w-3/4">
+                                    <h3 class="text-white font-bold">{experience.title}</h3>
+                                    <h4 class={`opacity-80 group-hover:opacity-100 text-${experience.locationColor}`}>{experience.location}</h4>
+                                    <p class="text-white text-sm opacity-80 group-hover:opacity-100">{experience.description}</p>
+                                </div>
+                                <div class="w-1/4 text-right">
+                                    <p class="text-white text-sm opacity-80 group-hover:opacity-100">{(experience.startYear === experience.endYear) ? experience.startMonth : experience.startYear} — { (experience.startYear === experience.endYear && experience.endMonth)} {experience.endYear}</p>
+                                </div>
                             </div>
-                            <h4 class={`opacity-80 text-${experience.locationColor}`}>{experience.location}</h4>
-                            <p class="text-white opacity-80">{experience.description}</p>
                         </a>
                     </li>
                 )

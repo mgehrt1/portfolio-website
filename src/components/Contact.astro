@@ -7,16 +7,16 @@ if (Astro.request.method === "POST") {
         const lastName = data.get("lastname");
         const email = data.get("email");
         const message = data.get("message");
-        if (typeof firstName !== "string" || firstName.length < 1) {
+        if (typeof firstName !== "string" || (firstName.length < 1)) {
             errors.firstName += "Please enter your first name.";
         }
-        if (typeof lastName !== "string" || lastName.length < 1) {
+        if (typeof lastName !== "string" || (lastName.length < 1)) {
             errors.lastName += "Please enter your last name.";
         }
-        if (typeof email !== "string" || email.includes("@")) {
+        if (typeof email !== "string" || !email.includes("@")) {
             errors.email += "Please enter a valid email.";
         }
-        if (typeof message !== "string" || message.length < 1) {
+        if (typeof message !== "string" || (message.length < 1)) {
             errors.message += "Please enter a message.";
         }
     } catch (error) {
@@ -29,25 +29,33 @@ if (Astro.request.method === "POST") {
 
 <section id="contact" class="flex flex-col items-center mb-80 pt-12 scroll-mt-24">
     <h2 class="mt-5 text-teal text-2xl">Contact</h2>
-    <form method="POST" id="message" class="flex flex-col items-center px-4 mt-5 w-full">
-        <div class="flex justify-between w-full gap-3">
-            <input type="text" name="firstname" placeholder="First Name" required class="bg-light-blue text-white rounded-2xl w-full h-16 pl-3"/>
-            <label>
-                {errors.firstName && <p>{errors.firstName}</p>}
-            </label>
-            <input type="text" name="lastname" placeholder="Last Name" required class="bg-light-blue text-white rounded-2xl w-full h-16 pl-3"/>
-            <label>
-                {errors.lastName && <p>{errors.lastName}</p>}
-            </label>
+    <form action="#contact" method="POST" id="form" class="flex flex-col px-4 mt-5 w-full">
+        <div class="flex w-full gap-3">
+            <input type="text" name="firstname" placeholder="First Name" class="bg-light-blue text-white rounded-2xl w-full h-16 pl-3"/>
+            <input type="text" name="lastname" placeholder="Last Name" class="bg-light-blue text-white rounded-2xl w-full h-16 pl-3"/>
         </div>
-        <input type="email" name="email" placeholder="Email" required class="bg-light-blue text-white rounded-2xl w-full h-16 pl-3 mt-3"/>
+        <div class="flex w-full gap-3">
+            <label class="w-full pl-3">{errors.firstName && <p class="text-red opacity-80">{errors.firstName}</p>}</label>
+            <label class="w-full pl-3">{errors.lastName && <p class="text-red opacity-80">{errors.lastName}</p>}</label>
+        </div>
+        <input type="text" name="email" placeholder="Email" class="bg-light-blue text-white rounded-2xl w-full h-16 pl-3 mt-3"/>
         <label>
-            {errors.email && <p>{errors.email}</p>}
+            {errors.email && <p class="text-red opacity-80">{errors.email}</p>}
         </label>
-        <textarea name="message" placeholder="Message" rows="8" required class="bg-light-blue text-white rounded-2xl w-full pl-3 pt-3 mt-3 resize-none"></textarea>
+        <textarea name="message" placeholder="Message" rows="8" class="bg-light-blue text-white rounded-2xl w-full pl-3 pt-3 mt-3 resize-none"></textarea>
         <label>
-            {errors.message && <p>{errors.message}</p>}
+            {errors.message && <p class="text-red opacity-80">{errors.message}</p>}
         </label>
-        <input type="submit" name="submit" value="Send" class="bg-pink-400 opacity-80 text-white rounded-2xl w-1/2 h-16 mt-3 text-3xl cursor-pointer"/>
+        <div class="flex justify-end">
+            <input type="submit" name="submit" value="Send" class="bg-pink-400 opacity-80 text-white rounded-2xl w-1/4 h-10 mt-3 text-lg cursor-pointer"/>
+        </div>
     </form>
 </section>
+
+<script>
+    const form = document.getElementById('form');
+    form?.addEventListener('submit', () => {
+        console.log('HELLO');
+        document.getElementById('form')
+    })
+</script>

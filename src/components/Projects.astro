@@ -1,7 +1,7 @@
 ---
 import projects from '../../public/projects.json';
 ---
-<section id="projects" class="flex flex-col items-center mt-24 scroll-mt-24">
+<section id="projects" class="flex flex-col items-center pt-12 pb-12 scroll-mt-24">
     <!--h2 class="mt-5 text-teal text-2xl">Projects</h2-->
     <ul>
         {projects.data.map(project => {
@@ -14,7 +14,7 @@ import projects from '../../public/projects.json';
                             </div>
                             <h4 class={`opacity-80 text-${project.locationColor}`}>{project.location}</h4>
                             <p class="text-white opacity-80">{project.description}</p>
-                            <div class="flex flex-wrap">
+                            <div class="flex flex-wrap mt-2">
                                 {project.techStack.map(techElement => <div class="bg-techElement rounded-full text-teal px-3 py-1 mr-2">{techElement}</div>)}
                             </div>    
                         </a>

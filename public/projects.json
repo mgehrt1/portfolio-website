@@ -8,7 +8,7 @@
             "locationColor": "blue",
             "link": "https://github.com/mgehrt1/portfolio-website",
             "description": "Created a personal website to showcase my portfolio and be hosted online. Learned and used the Astro framework along the way.",
-            "techStack": ["Astro", "React", "Tailwind", "TypeScript", "HTML"]
+            "techStack": ["Astro", "React", "Tailwind", "TypeScript", "Xata", "HTML"]
         },
         {
             "title": "Airline Optimization",
@@ -29,6 +29,16 @@
             "link": "https://github.com/mgehrt1",
             "description": "Worked on a team of 6 to create a class project that utilizes a Red-Black tree. Through a CLI, the user can load a CSV file of employees and carry out various functions related to analyzing the company’s employees.",
             "techStack": ["Java", "Git"]
+        },
+        {
+            "title": "Minesweeper Game",
+            "season": "Fall",
+            "year": 2022,
+            "location": "Personal",
+            "locationColor": "yellow",
+            "link": "https://github.com/mgehrt1",
+            "description": "Clone of the popular Minesweeper game. Created as an introductory project to the Python language.",
+            "techStack": ["Python", "PyGame"]
         }
     ]
 }

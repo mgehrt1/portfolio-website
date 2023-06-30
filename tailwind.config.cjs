@@ -10,11 +10,14 @@ module.exports = {
 				'blue': '#48A7FF',
 				'green': '#42F578',
 				'yellow': '#E8DD7E',
-				'teal': '#00FBDD',
+				'teal': '#52B5B5',
 				'light-blue': '#212C3F',
 				'techElement': 'rgba(43, 72, 82, 0.5)',
 			}
 		},
 	},
 	plugins: [],
+	safelist: [{
+		pattern: /text-(green|yellow)/
+	}]
 }

@@ -39,7 +39,7 @@ export const post: APIRoute = async ({ request }) => {
 
     errors.success = true;
     return new Response(
-        JSON.stringify({errors}),
+        JSON.stringify(errors),
         { status: 200 }
     );
 };

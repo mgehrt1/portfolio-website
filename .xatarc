@@ -1,6 +1,0 @@
-{
-  "databaseURL": "https://mgehrt1-s-workspace-rcmvmi.us-east-1.xata.sh/db/portfolio-website",
-  "codegen": {
-    "output": "src/xata.ts"
-  }
-}

@@ -1,4 +1,4 @@
-import { useState, useEffect ,FormEvent } from "react";
+import { useState, FormEvent } from "react";
 
 export default function Contact() {
     const [firstName, setFirstName] = useState("");
@@ -9,7 +9,8 @@ export default function Contact() {
     const [lastNameMessage, setLastNameMessage] = useState("");
     const [emailMessage, setEmailMessage] = useState("");
     const [messageMessage, setMessageMessage] = useState("");
-    const [success, setSuccess] = useState(false); 
+    const [success, setSuccess] = useState(false);
+ 
 
     async function submit(e: FormEvent<HTMLFormElement>) {
         e.preventDefault();
@@ -51,7 +52,7 @@ export default function Contact() {
     return (
         <section id="contact" className="flex flex-col items-center mb-80 pt-12 scroll-mt-24">
             <h2 className="mt-5 text-teal text-2xl">Contact</h2>
-            <form onSubmit={submit} action="#contact" method="POST" id="form" className="flex flex-col px-4 mt-5 w-full">
+            <form onSubmit={submit} action="#contact" method="POST" className="flex flex-col px-4 mt-5 w-full">
                 <div className="flex w-full gap-3">
                     <input type="text" name="firstname" placeholder="First Name" value={firstName} onChange={(e) => setFirstName(e.target.value)} className="bg-light-blue text-white rounded-2xl w-full h-16 pl-3"/>
                     <input type="text" name="lastname" placeholder="Last Name" value={lastName} onChange={(e) => setLastName(e.target.value)} className="bg-light-blue text-white rounded-2xl w-full h-16 pl-3"/>

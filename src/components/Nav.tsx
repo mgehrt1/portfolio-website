@@ -31,7 +31,7 @@ export default function Nav() {
     }, []);
 
     return (
-        <nav className="mt-20">
+        <nav className="mt-20 hidden lg:block">
             <ul className="w-max">
                 <NavTab text="About" link="about" id="about-nav" activeNavTab={activeNavTab} />
                 <NavTab text="Experience" link="experience" id="experience-nav" activeNavTab={activeNavTab} />

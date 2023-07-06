@@ -2,28 +2,30 @@
 import projects from '../../public/projects.json';
 ---
 <section id="projects" class="flex flex-col items-center pt-12 pb-12 scroll-mt-24">
-    <!--h2 class="mt-5 text-teal text-2xl">Projects</h2-->
+    <div class="sticky flex z-50 bg-background/75 backdrop-blur justify-center top-0 lg:hidden w-screen">
+        <h2 class="my-5 text-white text-2xl">Projects</h2>
+    </div>
     <ul>
         {projects.data.map(project => {
-                return (
-                    <li class="p-3 mt-5 rounded-2xl hover:bg-light-blue group">
-                        <a href={project.link} target="_blank">
-                            <div class="flex">
-                                <div class="w-3/4">
-                                    <h3 class="text-white font-bold">{project.title}</h3>
-                                    <h4 class={`opacity-80 group-hover:opacity-100 text-${project.locationColor}`}>{project.location}</h4>
-                                    <p class="text-white text-sm opacity-80 group-hover:opacity-100">{project.description}</p>
-                                    <div class="flex flex-wrap">
-                                        {project.techStack.map(techElement => <div class="bg-techElement rounded-full text-teal text-sm px-3 py-1 mt-2 mr-2">{techElement}</div>)}
-                                    </div>   
-                                </div>
-                                <div class="w-1/4 text-right">
-                                    <p class="text-white text-sm opacity-80 group-hover:opacity-100">{project.season} {project.year}</p>
-                                </div>
+            return (
+                <li class="p-3 mt-5 rounded-2xl hover:bg-light-blue group">
+                    <a href={project.link} target="_blank">
+                        <div class="flex">
+                            <div class="w-3/4">
+                                <h3 class="text-white font-bold">{project.title}</h3>
+                                <h4 class={`opacity-80 group-hover:opacity-100 text-${project.locationColor}`}>{project.location}</h4>
+                                <p class="text-white text-sm opacity-80 group-hover:opacity-100">{project.description}</p>
+                                <div class="flex flex-wrap">
+                                    {project.techStack.map(techElement => <div class="bg-techElement rounded-full text-teal text-sm px-3 py-1 mt-2 mr-2">{techElement}</div>)}
+                                </div>   
                             </div>
-                        </a>
-                    </li>
-                )
-            })}
+                            <div class="w-1/4 text-right">
+                                <p class="text-white text-sm opacity-80 group-hover:opacity-100">{project.season} {project.year}</p>
+                            </div>
+                        </div>
+                    </a>
+                </li>
+            )
+        })}
     </ul>
 </section>

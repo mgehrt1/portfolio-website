@@ -8,7 +8,7 @@ import experiences from '../../public/experiences.json';
     <ul>
         {experiences.data.map((experience, index) => {
                 return (
-                    <li class={`p-3 rounded-2xl hover:bg-light-blue group ${index > 0 ? "mt-5" : ""}`}>
+                    <li class={`p-3 rounded-2xl hover:bg-light-blue group hover:animate-scale ${index > 0 ? "mt-5" : ""}`}>
                         <a href={experience.locationLink} target="_blank">
                             <div class="flex">
                                 <div class="w-3/4">

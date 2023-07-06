@@ -1,0 +1,14 @@
+/* For WebKit-based browsers */
+input:autofill {
+    border: 3px solid darkorange !important;
+}
+
+input:-webkit-autofill {
+    border: 3px solid darkorange !important;
+}
+
+/* For Firefox */
+input:-moz-autofill {
+  box-shadow: 0 0 0 1000px white inset;
+  -moz-text-fill-color: #000 !important;
+}

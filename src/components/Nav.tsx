@@ -4,29 +4,31 @@ import { useState, useEffect } from "react"
 export default function Nav() {
     const [activeNavTab, setActiveNavTab] = useState("");
 
-    useEffect(() => {
-        const handleScroll = () => {
-          const sections = document.querySelectorAll("section[id]");
-    
-          let currentSectionId = "";
-    
-          sections.forEach((section) => {
+    const handleScroll = () => {
+        const sections = document.querySelectorAll("section[id]");
+
+        let currentSectionId = "";
+
+        sections.forEach((section) => {
             const rect = section.getBoundingClientRect();
     
             if (rect.top <= window.innerHeight / 4 && rect.bottom >= window.innerHeight / 4) {
-              currentSectionId = section.getAttribute("id") || "";
+            currentSectionId = section.getAttribute("id") || "";
             }
-          });
-    
-          setActiveNavTab(currentSectionId + "-nav");
-        };
-    
+        });
+
+        setActiveNavTab(currentSectionId + "-nav");
+    };
+
+    useEffect(() => {
+        handleScroll();
+        
         window.addEventListener("scroll", handleScroll);
     
         return () => {
-          window.removeEventListener("scroll", handleScroll);
+            window.removeEventListener("scroll", handleScroll);
         };
-      }, []);
+    }, []);
 
     return (
         <nav className="mt-20">

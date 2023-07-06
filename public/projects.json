@@ -8,7 +8,7 @@
             "locationColor": "blue",
             "link": "https://github.com/mgehrt1/portfolio-website",
             "description": "Created a personal website to showcase my portfolio and be hosted online. Learned and used the Astro framework along the way.",
-            "techStack": ["Astro", "React", "Tailwind", "TypeScript", "Xata", "HTML"]
+            "techStack": ["Astro", "React", "Tailwind", "TypeScript", "HTML"]
         },
         {
             "title": "Airline Optimization",

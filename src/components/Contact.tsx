@@ -33,6 +33,8 @@ export default function Contact() {
         }
     }
 
+    let buttonText: string = success ? "Thanks!" : "Contact Me"
+
     return (
         <section id="contact" className="flex flex-col items-center mb-80 pt-12 scroll-mt-24">
             <h2 className="mt-5 text-teal text-2xl">Contact</h2>
@@ -42,8 +44,7 @@ export default function Contact() {
                 <textarea name="message" placeholder="Message" rows={10} value={message} onChange={(e) => setMessage(e.target.value)} className="bg-light-blue text-white rounded-2xl w-full pl-3 pt-3 mt-3 resize-none" disabled={success}></textarea>
                 <label className="pl-3">{messageError && <p className="text-red opacity-80">{messageError}</p>}</label>
                 <div className="flex justify-end">
-                    {!success && <input type="submit" value="Contact Me" className="flex justify-center items-center bg-pink-400 opacity-80 text-white rounded-2xl w-1/3 h-10 mt-3 text-lg cursor-pointer" />}
-                    {success && <div className="flex justify-center items-center bg-lime-600 opacity-80 text-white rounded-2xl w-full h-10 mt-3 text-lg">Thank you!</div>}
+                    <input type="submit" value={buttonText} className={`flex justify-center items-center opacity-80 text-white rounded-2xl h-10 mt-3 text-lg  ${success ? "bg-lime-600 w-full disabled" : "bg-pink-400 w-1/3 cursor-pointer"}`} />
                 </div>
             </form>
         </section>

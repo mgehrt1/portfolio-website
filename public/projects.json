@@ -17,7 +17,7 @@
             "location": "University of Wisconsin - Madison",
             "locationColor": "red",
             "link": "https://github.com/mgehrt1",
-            "description": "Worked on a team of 6 to create a class project that utilizes Dijkstra's shortest path algorithm. Through a CLI, the user can load a graph of cities and carry out various functions related to airplane travel between them.",
+            "description": "Worked on a team of six to create a class project that utilizes Dijkstra's shortest path algorithm. Through a CLI, the user can load a graph of cities and carry out various functions related to airplane travel between them.",
             "techStack": ["Java", "Git"]
         },
         {
@@ -27,7 +27,7 @@
             "location": "University of Wisconsin - Madison",
             "locationColor": "red",
             "link": "https://github.com/mgehrt1",
-            "description": "Worked on a team of 6 to create a class project that utilizes a Red-Black tree. Through a CLI, the user can load a CSV file of employees and carry out various functions related to analyzing the company’s employees.",
+            "description": "Worked on a team of six to create a class project that utilizes a Red-Black tree. Through a CLI, the user can load a CSV file of employees and carry out various functions related to analyzing the company’s employees.",
             "techStack": ["Java", "Git"]
         },
         {

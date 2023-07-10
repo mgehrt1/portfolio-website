@@ -9,7 +9,8 @@
             "location": "Heartland Business Systems",
             "locationLink": "https://www.hbs.net/",
             "locationColor": "blue",
-            "description": "Worked with large clients like SSM Health and improved various aspects of their websites. Learned and used the Microsoft .NET stack for development."
+            "description": "Worked with large clients like SSM Health and improved various aspects of their websites. Learned and used the Microsoft .NET stack for development.",
+            "bullets": ["Worked with large clients like SSM Health and improved various aspects of their websites.", "Completed 8 tickets that have made it to production","Learned and used the Microsoft .NET stack for development."]
         },
         {
             "title": "Cashier/Bagger",
@@ -20,7 +21,8 @@
             "location": "Woodman's Markets",
             "locationLink": "https://www.woodmans-food.com/",
             "locationColor": "green",
-            "description": "Learned great communication and customer service skills. Quickly exceeded standards and recieved several documented customer compliments for excellent service."
+            "description": "Learned great communication and customer service skills. Quickly exceeded standards and recieved several documented customer compliments for excellent service.",
+            "bullets": ["Learned great communication and customer service skills.", "Quickly exceeded standards and recieved several documented customer compliments for excellent service."]
         }
     ]
 }

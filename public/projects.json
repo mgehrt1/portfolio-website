@@ -7,8 +7,8 @@
             "location": "Heartland Business Systems",
             "locationColor": "blue",
             "link": "https://github.com/mgehrt1/portfolio-website",
-            "description": "Created a personal website to showcase my portfolio and be hosted online. Learned and used the Astro framework and Tailwind styling along the way.",
-            "techStack": ["Astro", "React", "Tailwind", "TypeScript", "HTML"]
+            "description": "Created a personal website to showcase my skills, projects, and achievements. The website was developed using the Astro framework and styled with Tailwind CSS. Microsoft Azure has also been used to deploy and host the website.",
+            "techStack": ["Astro", "React", "Tailwind", "TypeScript", "Azure"]
         },
         {
             "title": "Airline Optimization",

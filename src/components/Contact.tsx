@@ -16,9 +16,9 @@ export default function Contact() {
         });
         const data = await response.json();
         if (data.success) {
-            const subject = 'Contact Form Submission';
+            const subject = "Contact Form Submission";
             const body = `${message}\n\n- ${name}`;
-        
+
             const mailtoLink = `mailto:matthewagehrt@gmail.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
             window.location.href = mailtoLink;
 
@@ -31,9 +31,9 @@ export default function Contact() {
             data.name ? setNameError(data.name) : setNameError("");
             data.message ? setMessageError(data.message) : setMessageError("");
         }
-    }
+    };
 
-    let buttonText: string = success ? "Thanks!" : "Contact Me"
+    let buttonText: string = success ? "Thanks!" : "Contact Me";
 
     return (
         <section id="contact" className="flex flex-col items-center mb-80 pt-12 scroll-mt-24">

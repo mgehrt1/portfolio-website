@@ -10,12 +10,21 @@ export default function Contact() {
     const submit = async (e: React.FormEvent<HTMLFormElement>) => {
         e.preventDefault();
         const formData = new FormData(e.currentTarget);
-        const response = await fetch("/api/contact", {
-            method: "POST",
-            body: formData,
-        });
-        const data = await response.json();
-        if (data.success) {
+
+        const errors = { name: "", message: "", success: true };
+        const name = formData.get("name");
+        const message = formData.get("message");
+        // Validate the data
+        if (typeof name !== "string" || name.length < 1) {
+            errors.name += "Please enter your name.";
+            errors.success = false;
+        }
+        if (typeof message !== "string" || message.length < 1) {
+            errors.message += "Please enter a message.";
+            errors.success = false;
+        }
+
+        if (errors.success) {
             const subject = "Contact Form Submission";
             const body = `${message}\n\n- ${name}`;
 
@@ -28,8 +37,8 @@ export default function Contact() {
             setMessageError("");
             setSuccess(true);
         } else {
-            data.name ? setNameError(data.name) : setNameError("");
-            data.message ? setMessageError(data.message) : setMessageError("");
+            errors.name ? setNameError(errors.name) : setNameError("");
+            errors.message ? setMessageError(errors.message) : setMessageError("");
         }
     };
 

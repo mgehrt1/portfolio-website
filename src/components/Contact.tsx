@@ -53,7 +53,7 @@ export default function Contact() {
                 <textarea name="message" placeholder="Message" rows={10} value={message} onChange={(e) => setMessage(e.target.value)} className="bg-light-blue text-white rounded-2xl w-full pl-3 pt-3 mt-3 resize-none" disabled={success}></textarea>
                 <label className="pl-3">{messageError && <p className="text-red opacity-80">{messageError}</p>}</label>
                 <div className="flex justify-end">
-                    <input type="submit" value={buttonText} className={`flex justify-center items-center opacity-80 text-white rounded-2xl h-10 mt-3 text-lg  ${success ? "bg-lime-600 w-full disabled" : "bg-pink-400 w-1/3 cursor-pointer"}`} disabled={success} />
+                    <input type="submit" value={buttonText} className={`flex justify-center items-center opacity-80 text-white rounded-2xl h-10 mt-3 lg:text-lg md:text-lg text-md  ${success ? "transition-width duration-500 ease-in-out w-full bg-lime-600" : "w-1/3 bg-pink-400 cursor-pointer"}`} disabled={success} />
                 </div>
             </form>
         </section>

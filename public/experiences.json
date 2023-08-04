@@ -9,7 +9,11 @@
             "location": "Heartland Business Systems",
             "locationLink": "https://www.hbs.net/",
             "locationColor": "blue",
-            "bullets": ["Collaborated closely with SSMHealth to debug and resolve issues on their Kentico CMS based website with .NET MVC.", "Implemented and deployed over 10 features to production environments.","Engaged in an end-to-end agile software development cycle, leveraging Azure DevOps within a collaborative team environment."]
+            "bullets": [
+                "Collaborated closely with SSMHealth to debug and resolve issues on their Kentico CMS based website in C# with .NET MVC.",
+                "Implemented and deployed over 30 features to production environments for companies through writing optimal and maintainable code. Primarily worked with C# in the .NET MVC web application framework.",
+                "Engaged in an end-to-end agile software development cycle, leveraging Azure DevOps CI/CD pipelines and unit testing within a collaborative team environment"
+            ]
         },
         {
             "title": "Cashier/Bagger",
@@ -20,7 +24,10 @@
             "location": "Woodman's Markets",
             "locationLink": "https://www.woodmans-food.com/",
             "locationColor": "green",
-            "bullets": ["Demonstrated exceptional communication skills by interacting with more than 100 customers daily.", "Surpassed performance standards and received 2 documented compliments from customers for delivering excellent service."]
+            "bullets": [
+                "Demonstrated exceptional communication skills by interacting with more than 100 customers daily.",
+                "Surpassed performance standards and received 2 documented compliments from customers for delivering excellent service."
+            ]
         }
     ]
 }

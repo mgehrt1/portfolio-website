@@ -16,7 +16,7 @@
             "year": 2023,
             "location": "University of Wisconsin - Madison",
             "locationColor": "red",
-            "link": "https://github.com/mgehrt1",
+            "link": "https://github.com/mgehrt1/airline-optimization",
             "description": "Worked on a team of six to create a class project that utilizes Dijkstra's shortest path algorithm. Through a CLI, the user can load a graph of cities and carry out various functions related to airplane travel between them.",
             "techStack": ["Java", "Git"]
         },
@@ -26,7 +26,7 @@
             "year": 2023,
             "location": "University of Wisconsin - Madison",
             "locationColor": "red",
-            "link": "https://github.com/mgehrt1",
+            "link": "https://github.com/mgehrt1/employee-database",
             "description": "Worked on a team of six to create a class project that utilizes a Red-Black tree. Through a CLI, the user can load a CSV file of employees and carry out various functions related to analyzing the company’s employees.",
             "techStack": ["Java", "Git"]
         },

@@ -16,6 +16,20 @@
             ]
         },
         {
+            "title": "Firmware Member",
+            "startMonth": "Sept",
+            "endMonth": "Dec",
+            "startYear": 2022,
+            "endYear": 2022,
+            "location": "UW-Madison Badgerloop (Solar car team)",
+            "locationLink": "https://badgerloop.org/",
+            "locationColor": "red",
+            "bullets": [
+                "Developed an accelerometer driver in C++ to regulate vehicle speed and maximize energy efficiency.",
+                "Wrote documentation to help onboard new members with Ubuntu via WSL and Git/GitHub"
+            ]
+        },
+        {
             "title": "Cashier/Bagger",
             "startMonth": "July",
             "endMonth": "August",

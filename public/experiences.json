@@ -10,9 +10,23 @@
             "locationLink": "https://www.hbs.net/",
             "locationColor": "blue",
             "bullets": [
-                "Collaborated closely with SSMHealth to debug and resolve issues on their Kentico CMS based website in C# with .NET MVC.",
-                "Implemented and deployed over 30 features to production environments for companies through writing optimal and maintainable code. Primarily worked with C# in the .NET MVC web application framework.",
+                "Led a team in a comprehensive website rebranding for a client. Assumed leadership responsibilities seamlessly after a team member's departure, leading to an 80% increase in productivity on the project.",
+                "Implemented and deployed features to production environments for clients through writing optimal and maintainable code. Primarily worked with C# in the .NET MVC web application framework",
                 "Engaged in an end-to-end agile software development cycle, leveraging Azure DevOps CI/CD pipelines and unit testing within a collaborative team environment"
+            ]
+        },
+        {
+            "title": "Firmware Member",
+            "startMonth": "Sept",
+            "endMonth": "Dec",
+            "startYear": 2022,
+            "endYear": 2022,
+            "location": "UW-Madison Badgerloop (Solar car team)",
+            "locationLink": "https://badgerloop.org/",
+            "locationColor": "red",
+            "bullets": [
+                "Developed an accelerometer driver in C++ to regulate vehicle speed and maximize energy efficiency.",
+                "Wrote documentation to help onboard new members with Ubuntu via WSL and Git/GitHub"
             ]
         },
         {

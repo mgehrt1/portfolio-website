@@ -1,6 +1,16 @@
 {
     "data": [
         {
+            "title": "Chat Rooms App",
+            "season": "Summer",
+            "year": 2023,
+            "location": "Personal",
+            "locationColor": "yellow",
+            "link": "https://soft-empanada-8eb271.netlify.app",
+            "description": "Built a chat room web app that allows users to create their own chat rooms and join other rooms with the custom room ID. It was developed using the NextJS framework, using Firebase for user authentication, Firestore for the real-time database, and styled with Tailwind CSS.",
+            "techStack": ["NextJS", "React", "TypeScript", "Firebase", "Tailwind"]
+        },
+        {
             "title": "Portfolio Website",
             "season": "Summer",
             "year": 2023,
@@ -38,6 +48,16 @@
             "locationColor": "yellow",
             "link": "https://github.com/mgehrt1",
             "description": "Clone of the popular Minesweeper game. Created as an introductory project to the Python language.",
+            "techStack": ["Python", "PyGame"]
+        },
+        {
+            "title": "Snake Game",
+            "season": "Fall",
+            "year": 2022,
+            "location": "Personal",
+            "locationColor": "yellow",
+            "link": "https://github.com/mgehrt1",
+            "description": "Clone of the popular Snake game. Created as an introductory project to the Python language.",
             "techStack": ["Python", "PyGame"]
         }
     ]
